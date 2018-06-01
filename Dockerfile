@@ -4,7 +4,7 @@ FROM centos
 RUN yum update -y  && yum  install -y git curl java-1.8.0-openjdk-1.8.0.171-8.b10.el7_5.x86_64 java-1.8.0-openjdk-devel-1.8.0.171-8.b10.el7_5.x86_64 libtool-ltdl sudo wget
 
 RUN wget http://repos.fedorapeople.org/repos/dchen/apache-maven/epel-apache-maven.repo -O /etc/yum.repos.d/epel-apache-maven.repo
-RUN yum -y install apache-maven-3.5.2-1.el7.n
+RUN yum -y install apache-maven
 
 #RUN yum update -y 
 #RUN  yum install -y git
